@@ -17,7 +17,7 @@ img {
   max-width: 100%;
 }
 
-button {
+button.switcher {
   position: relative;
   left: 800px;
   top: 300px;
