@@ -53,20 +53,16 @@ function beginCounter() {
         'To set a new interval date press "Continue" in this box',
         'Continue'
       );
-      // alert('Interval expired');
       buttonStart.disabled = true;
       inputEl.disabled = false;
       return
     }
 
-    // console.log("target:", target, "Date.now:", Date.now() );
     const { days, hours, minutes, seconds } = convertMs(target);
       remainDays.textContent = addLeadingZero((days), 2);
       remainHours.textContent = addLeadingZero((hours),2);
       remainMinutes.textContent = addLeadingZero((minutes), 2);
-      remainSecond.textContent = addLeadingZero((seconds),2);
-
-  // console.log("days, hours, minutes, seconds", days, hours, minutes, seconds);
+    remainSecond.textContent = addLeadingZero((seconds), 2);
   }, 1000)
 }
 
